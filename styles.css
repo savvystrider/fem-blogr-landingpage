@@ -8,7 +8,6 @@ body {
 }
 
 img {
-    /* display: block; */
     max-width: 100%;
 }
 
@@ -366,13 +365,13 @@ footer nav {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .designed .container {
         background-image: url(./images/illustration-editor-desktop.svg);
     }
 
     .illustration-phones {
-        display: contents;
+        display: block;
     }
 
     .free .container {
@@ -502,7 +501,6 @@ footer nav {
 
     .free {
         margin-top: 0;
-        /* padding-top: 4em; */
     }
 
     .free .container {
@@ -518,5 +516,6 @@ footer nav {
     .footer-container, .footer-container > * {
         display: flex;
         flex-direction: column;
+        padding-top: 2em;
     }
 }

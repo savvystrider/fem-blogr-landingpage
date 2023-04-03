@@ -43,17 +43,6 @@ productLink.addEventListener("mouseover", function() {
 })
 });
 
-// productLink.addEventListener("click", function() {
-//     if (menuProduct.style.display === "none" && window.innerWidth < 1000) {
-//         menuProduct.style.display = "block";
-//     } else {
-//         menuProduct.style.display = "none";
-//     }
-// });
-
-
-
-
 const companyLink = document.getElementById("company-link");
 const menuCompany = document.getElementById("menu-company");
 
@@ -70,14 +59,6 @@ companyLink.addEventListener("mouseover", function() {
 })
 });
 
-// companyLink.addEventListener("click", function() {
-//     if (menuCompany.style.display === "none" ) {
-//         menuCompany.style.display = "block";
-//     } else {
-//         menuCompany.style.display = "none";
-//     }
-// });
-
 const connectLink = document.getElementById("connect-link");
 const menuConnect = document.getElementById("menu-connect");
 
@@ -93,16 +74,6 @@ connectLink.addEventListener("mouseover", function() {
     
 })
 })
-
-// connectLink.addEventListener("click", function() {
-//     if (menuConnect.style.display === "none") {
-//         menuConnect.style.display = "block";
-//     } else {
-//         menuConnect.style.display = "none";
-//     }
-// });
-
-
 
 const openBtn = document.querySelector(".open-btn");
 const closeBtn = document.querySelector(".close-btn");
@@ -122,12 +93,12 @@ closeBtn.addEventListener("click", function(e) {
 
 
 
-if (window.innerWidth < 800) {
+if (window.innerWidth <= 800) {
     productLink.addEventListener("click", function() {
-    if (menuProduct.style.display === "none") {
-        menuProduct.style.display = "block";
+    if (document.querySelector("#menu-product").style.display === "none") {
+        document.querySelector("#menu-product").style.display = "block";
     } else {
-        menuProduct.style.display = "none";
+        document.querySelector("#menu-product").style.display = "none";
     }
     });
 
